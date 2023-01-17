@@ -11,13 +11,7 @@
 # REGENDATA ["github","cabal.project"]
 #
 name: Haskell-CI
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+on: push
 jobs:
   linux:
     name: Haskell-CI - Linux - ${{ matrix.compiler }}
